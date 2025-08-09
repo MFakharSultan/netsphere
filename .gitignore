@@ -67,8 +67,3 @@ bower_components
 # AWS stuff for publishing static files
 .aws-credentials.json
 .awspublish*
-
-themes/hextra/.github
-themes/hextra/.devcontainer
-themes/hextra/.vscode
-themes/hextra/.exampleSite

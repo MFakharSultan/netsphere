@@ -14,12 +14,15 @@ markup:
 
 menu:
   main:
-    - name: Docs
+    - name: Documentation
       pageRef: /docs
       weight: 1
+    - name: Blog
+      pageRef: /blog
+      weight: 2
     - name: About
       pageRef: /about
-      weight: 2
+      weight: 3
     - name: Search
       weight: 4
       params:
@@ -42,3 +45,13 @@ params:
   editURL:
     enable: false
     base: "https://github.com/imfing/hextra-starter-template/edit/main/content"
+
+  comments:
+    enable: false
+    type: giscus
+
+    giscus:
+      repo: MFakharSultan/netsphere
+      repoId: R_kgDOPbIT9Q
+      category: General
+      categoryId: DIC_kwDOPbIT9c4Ct-oV
