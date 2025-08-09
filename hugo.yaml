@@ -55,3 +55,7 @@ params:
       repoId: R_kgDOPbIT9Q
       category: General
       categoryId: DIC_kwDOPbIT9c4Ct-oV
+
+caches:
+  images:
+    dir: :cacheDir/images
