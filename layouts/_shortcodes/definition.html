@@ -1,0 +1,9 @@
+{{- $term := .Get "term" -}}
+{{- $desc := .Inner | markdownify -}}
+
+<dt class="hx:font-semibold hx:mt-8">
+  {{ $term }}
+</dt>
+<dd class="hx:ml-4 ">
+  {{ $desc }}
+</dd>

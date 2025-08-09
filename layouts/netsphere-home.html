@@ -1,0 +1,39 @@
+{{ define "main" }}
+<div class="hx:mx-auto hx:flex hextra-max-page-width">
+  {{ partial "sidebar.html" (dict "context" . "disableSidebar" true) }}
+  <div
+    class="hx:w-full hx:break-words hx:min-h-[calc(100vh-var(--navbar-height))] hx:min-w-0 hx:pb-8 hx:pt-8 hx:md:pt-12 hx:pl-[max(env(safe-area-inset-left),1.5rem)] hx:pr-[max(env(safe-area-inset-left),1.5rem)]"
+  >
+    <div class="hx:flex hx:flex-col">
+      <section class="hx:text-center hx:mt-16">
+        <h1
+          class="not-prose hx:text-4xl hx:font-bold hx:leading-none hx:tracking-tighter hx:md:text-5xl hx:py-2 hx:bg-clip-text hx:text-transparent hx:bg-gradient-to-r hx:from-gray-900 hx:to-gray-600 hx:dark:from-gray-100 hx:dark:to-gray-400 hx:mb-4"
+        >
+          Networking Knowledge <br />
+          Curated with Clarity
+        </h1>
+        <p
+          class="not-prose hx:text-xl hx:text-gray-600 hx:dark:text-gray-400 hx:sm:text-xl hx:mb-8"
+        >
+          Research-driven documentation and insights <br />written for learners,
+          by a learner.
+        </p>
+        <div class="hx:flex hx:items-center hx:justify-center hx:gap-4">
+          <a
+            href="{{ .Params.docURL }}"
+            class="not-prose hx:font-medium hx:cursor-pointer hx:px-6 hx:py-3 hx:rounded-full hx:text-center hx:text-white hx:inline-block hx:bg-primary-600 hx:hover:bg-primary-700 hx:focus:outline-hidden hx:focus:ring-4 hx:focus:ring-primary-300 hx:dark:bg-primary-600 hx:dark:hover:bg-primary-700 hx:dark:focus:ring-primary-800 hx:transition-all hx:ease-in hx:duration-200"
+            >Read Docs</a
+          >
+
+          <a
+            href="{{ .Params.blogURL }}"
+            class="not-prose hx:font-medium hx:cursor-pointer hx:px-6 hx:py-3 hx:rounded-full hx:bg-gray-100 hx:dark:bg-neutral-800 hx:text-center hx:dark:text-white hx:text-neutral-800 hx:inline-block hx:focus:outline-hidden hx:focus:ring-4 hx:focus:ring-primary-300 hx:dark:focus:ring-primary-800 hx:hover:underline"
+            >Visit Blog</a
+          >
+        </div>
+      </section>
+      <section class="hx:mt-16">{{ .Content | markdownify }}</section>
+    </div>
+  </div>
+</div>
+{{ end }}

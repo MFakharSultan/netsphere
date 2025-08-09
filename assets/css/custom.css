@@ -1,0 +1,17 @@
+.content {
+  padding-top: 20px;
+  color: #222;
+}
+
+.content h1 {
+  font-size: xx-large;
+}
+
+.content h2 {
+  font-size: x-large;
+  border-bottom: none;
+}
+
+.dark .content {
+  color: #cccc;
+}
